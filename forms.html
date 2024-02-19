@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Forms</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+    <h3>Application Form:</h3>
+    <hr>
+    <form>
+        
+        <div>
+        <label for="fname">First Name: </label>        
+        <input type="text" id="fname" name="fname" placeholder="Rohit" required>
+        </div>
+<br>
+        <div>
+        <label for="lname">Last Name: </label>
+        <input type="text" id="lname" name="lname" placeholder="Choudhury" required>
+        </div>
+        <br>
+        <label><b>Title : </b></label>
+        <label for="Mr.">Mr.</label>
+        <input type="radio" id="Mr." name="title">
+        <label for="Mrs.">Mrs.</label>
+        <input type="radio" id="Mrs." name="title">
+        <label for="Dr.">Dr.</label>
+        <input type="radio" id="Dr." name="title">
+        <br>
+        <br>
+        <div>
+        <label for="pass">Password: </label>
+        <input type="password" id="pass" name="pass" maxlength="12" required>
+        max 12 characters
+        </div>
+        <br>
+        <div>
+        <label for="mail">Email: </label>
+        <input type="email" id="mail" name="mail" placeholder="abc@xyz.com" required>
+        </div>
+        <br>
+        <div>
+        <label for="phone">Phone: </label>
+        <input type="tel" id="phone" name="phone" placeholder="123-456-7890" required>
+        </div>
+        <br>
+        <div>
+        <label for="bdate">DOB: </label>
+        <input type="DATE" id="bdate" name="bdate" required>
+        </div>
+        <br>
+        <div>
+        <label for="quantity">Quantity: </label>
+        <input type="number" id="quantity" name="quantity" min="0" max="99" value="1" required>
+        </div>
+        <br>
+        <label for="payment">Payment:</label>
+        <select id="payment">
+            <option style="text-align: center;" value="netbanking">Net Banking</option>
+            <option style="text-align: center;" value="upi">UPI</option>
+            <option style="text-align: center;" value="debitcard">Debit Card</option>
+            <option style="text-align: center;" value="ewallet">e-Wallet</option>
+        </select>
+    <br>
+    <br>
+    <label for="myfile">Upload file:</label>
+    <input type="file" id="myfile" accept=".pdf">
+
+<br>
+<br>
+            <input type="checkbox" id="subscribe" required>
+            <label for="subscribe">I agree with the terms & conditions of this website.</label>
+
+ <br>       
+<br>
+        <div>
+            <input type="reset">
+        </div>
+<br>
+<div>
+    <input type="submit">
+</div>
+
+    </form>
+</body>
+</html>
